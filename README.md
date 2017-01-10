@@ -1,7 +1,11 @@
 # Pachico\Tier
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what
-PSRs you support to avoid any confusion with users and contributors.
+![Travis](https://travis-ci.org/pachico/tier.svg?branch=master) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/pachico/tier/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/pachico/tier/?branch=master)
+
+Tier is a simple class with no dependencies that handles the definition of application tiers.
+This is to avoid the usage of non standard strings that usually define the tier an application is running in.
+
+This becomes handly when dealing with frameworks and the required tier configuration files.
 
 ## Install
 
@@ -14,6 +18,25 @@ $ composer require pachico/tier
 ## Usage
 
 ```php
+use Pachico\Tier\Tier;
+$tier = new Tier(Tier::DEVELOPMENT, [
+    Tier::DEVELOPMENT,
+    Tier::STAGING,
+    Tier::PRODUCTION
+    ]
+);
+echo $tier . PHP_EOL; // development
+echo json_encode($tier, JSON_PRETTY_PRINT) . PHP_EOL;
+/**
+{
+    "tier": "development",
+    "applicationTiers": [
+        "development",
+        "staging",
+        "production"
+    ]
+}
+*/
 
 ```
 
