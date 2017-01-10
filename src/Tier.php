@@ -72,8 +72,7 @@ class Tier implements \JsonSerializable
             static::PRODUCTION
         ];
 
-        $uniqueApplicationTiers = array_unique($applicationTiers);
-        $this->applicationTiers = empty($uniqueApplicationTiers) ? $this->allPossibleTiers : $uniqueApplicationTiers;
+        $this->applicationTiers = empty($applicationTiers) ? $this->allPossibleTiers : array_unique($applicationTiers);
         $this->validateDefinition($tier, $this->applicationTiers);
         $this->tier = $tier;
     }
