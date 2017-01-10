@@ -1,7 +1,7 @@
 {
     "name": "pachico/tier",
     "type": "library",
-    "description": "Definition class for application tiers",
+    "description": "Helper class for application tiers definitions",
     "keywords": [
         "pachico",
         "tier",
