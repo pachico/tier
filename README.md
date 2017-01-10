@@ -1,6 +1,6 @@
 # Pachico\Tier
 
-![Travis](https://travis-ci.org/pachico/tier.svg?branch=master) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/pachico/tier/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/pachico/tier/?branch=master)
+![Travis](https://travis-ci.org/pachico/tier.svg?branch=master) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/pachico/tier/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/pachico/tier/?branch=master) [![Coverage Status](https://coveralls.io/repos/github/pachico/tier/badge.svg?branch=master)](https://coveralls.io/github/pachico/tier?branch=master)
 
 Tier is a simple class with no dependencies that handles the definition of application tiers.
 This is to avoid the usage of non standard strings that usually define the tier an application is running in.
